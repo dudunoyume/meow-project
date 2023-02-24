@@ -1,0 +1,166 @@
+.mainFooter
+.container{
+    font-family:'Noto Sans TC', sans-serif;
+    display: flex;
+    width: 1200px;
+    margin: auto;
+
+}
+
+.mainFooter{
+    padding: 10vh 0 0 0;
+    bottom: 0;
+    background: linear-gradient(-20deg, #3f5494,#08c7a5);
+}
+
+
+//  有消瀏覽器還不支持 has 選擇器
+.footerItem{
+    width: 0;
+    flex-grow: 1;
+    margin: 0 20px;
+    h4{
+        font-size: 24px;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        margin-bottom: .5rem;
+        padding-bottom: .5rem;
+        // input{
+        //     margin-left: 5px;
+        //     appearance: none;
+        //     content: "";
+        //     height: 15px;
+        //     width:15px;
+        //     border-top:10px solid transparent;
+        //     border-left:15px solid gray;
+        //     border-bottom:10px solid transparent;
+        //     border-right:0px solid transparent;
+        //     transition: transform 0.3s ease-in-out;
+        // }
+
+        // input:checked{
+        //     transform: rotate(90deg);
+        //     border-left:15px solid rgb(51, 50, 50);
+        // }
+    }
+
+    // h4:has(input:checked) ~ nav{
+    //     display: flex;
+
+    // }
+
+
+    nav{
+        display: none;
+        flex-direction: column;
+        font-size: 1.5rem;
+        transition: transform 1s ease-in-out;
+        overflow: hidden;
+        height: 0;
+        ul{
+            height: 75%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        a{
+            color: #fff;
+            line-height: 1.4;
+            text-decoration: none;
+            padding:5px 0;
+            &:hover{
+                color: #996d1c;
+            }
+        }
+    }
+
+}
+
+
+.footerSubs{
+    width: 0;
+    flex-grow: 1;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    h4{
+        font-size: 24px;
+        color: #fff;
+        border-bottom: 1px solid #fff;
+        margin-bottom: .5rem;
+        padding-bottom: .5rem;
+    }
+
+    form{
+        display: flex;
+        width: 100%;
+        margin: auto 0px;
+    }
+
+    input[type= "submit"],
+    input[type = "text"]{
+        border: none;
+        padding: 5px 10px;
+    }
+
+    input[type = "text"]{
+        width: 0;
+        flex-grow: 1;
+
+
+    }
+    input[type= "submit"]{
+        color:#70f6df;
+        background:#3e5293;
+    }
+
+}
+
+
+.copyright{
+    text-align: center;
+    margin:15vh 0 0 0;
+    padding:10px 0px;
+    background-color: #3e5293;
+    color: #70f6df;
+    width: 100%;
+}
+
+.container{
+
+    .triangle{
+        margin-left: 5px;
+        appearance: none;
+        content: "";
+        height: 15px;
+        width:15px;
+        border-top:10px solid transparent;
+        border-left:15px solid gray;
+        border-bottom:10px solid transparent;
+        border-right:0px solid transparent;
+        transition: transform 0.3s ease-in-out;
+        margin-top:10px;
+    }
+
+    .triangle:checked{
+        transform: rotate(90deg);
+        border-left:15px solid rgb(51, 50, 50);
+    }
+
+    .triangle:checked ~ .footerItem nav{
+
+        display: flex;
+        animation: hei 0.2s linear forwards ;
+    }
+
+
+}
+
+@keyframes hei {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
