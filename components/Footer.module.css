@@ -1,0 +1,93 @@
+.mainFooter {
+  padding: 2rem 0 0 0;
+  bottom: 0;
+  background: linear-gradient(-20deg, #3f5494, #08c7a5);
+}
+
+.container {
+  font-family: 'Noto Sans TC', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  margin: auto;
+}
+
+.footerItem {
+  width: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 2rem 20px;
+}
+
+.footerItem ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footerItem ul li {
+  margin: 1rem;
+}
+
+.footerItem ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.footerItem h4 {
+  font-size: 2rem;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+}
+
+.footerItem p {
+  font-size: 1.8rem;
+}
+
+.footerItem p a {
+  color: #aaa;
+}
+
+.footerItem p ~ a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footerItem p ~ a i {
+  font-size: 4rem;
+  margin: 1rem;
+  color: #FFF;
+  padding: 0 .2rem;
+}
+
+.footerItem p ~ a:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.footerItem p ~ a:hover i, .footerItem p ~ a:focus i {
+  border: .4rem solid black;
+  border-radius: 5px;
+}
+
+.copyright {
+  text-align: center;
+  margin: 0 0 0 0;
+  padding: 10px 0px;
+  background-color: #3e5293;
+  color: #70f6df;
+  width: 100%;
+  font-size: 1.6rem;
+}
+/*# sourceMappingURL=Footer.module.css.map */

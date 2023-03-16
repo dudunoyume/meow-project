@@ -5,6 +5,7 @@ import Image from "next/image";
 export default function Fanciblock() {
   return (
     <div className={styles.container}>
+      <h1>
       <Link href="#" className={styles.logo}>
         <Image
           src="/pawprint.png"
@@ -14,9 +15,12 @@ export default function Fanciblock() {
           quality={75}
         />
 
-        貓貓大踏查
+協尋喵星人
         
       </Link>
+
+      </h1>
+
 
       {/* <label className={styles.dropdownController} htmlFor="rwdCheck" ><i className="fas fa-arrow-down-short-wide" href="#"></i> </label> */}
       <input id ="rwdCheck" type="checkbox" name="rwdCheck" className={styles.rwdCheck}/>
@@ -27,7 +31,7 @@ export default function Fanciblock() {
         <div className={styles.subNav}>
           <Link href="#"> 計畫介紹 </Link>
           <Link href="#"> 喵星人世界 </Link>
-          <Link href="#"> 水世界 </Link>
+          <Link href="#"> App下載 </Link>
           <Link href="#"> 時間軸 </Link>
 
         </div>

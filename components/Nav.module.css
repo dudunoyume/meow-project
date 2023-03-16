@@ -1,0 +1,210 @@
+.container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 2rem;
+  background-image: linear-gradient(30deg, #88afcb 40%, #8ac4bc 60%);
+  font-family: "Noto Sans TC", sans-serif;
+  padding: 1rem;
+}
+
+.container h1 {
+  font-size: 3.5rem;
+}
+
+.container .logo {
+  width: 18rem;
+  margin: 0 0 0 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+.container .logo img {
+  width: 5rem;
+  height: auto;
+  min-width: 4rem;
+  vertical-align: middle;
+  margin-right: 2rem;
+}
+
+.container .mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .mainNav a {
+  margin-right: 2rem;
+  padding: .3rem;
+  text-decoration: none;
+  color: black;
+  position: relative;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.container .mainNav a:after {
+  content: "";
+  position: absolute;
+  border-bottom: 1px solid black;
+  right: 100%;
+  left: 0;
+  bottom: 0;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.container .mainNav a:hover {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px);
+}
+
+.container .mainNav a:hover:after {
+  right: 0;
+  left: 0;
+}
+
+.container .mainNav .headerSearch {
+  padding: 0.5rem;
+}
+
+.container .mainNav .headerSearch button,
+.container .mainNav .headerSearch input {
+  border: none;
+  background-color: #fff;
+  padding: 5px 10px;
+}
+
+.container .mainNav .headerSearch button:focus,
+.container .mainNav .headerSearch input:focus {
+  outline: none;
+}
+
+.container .mainNav .headerSearch button {
+  border-radius: 0 200px 200px 0;
+}
+
+.container .mainNav .headerSearch input {
+  border-radius: 200px 0 0 200px;
+}
+
+.container .rwdCheck {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  display: none;
+  margin-right: 2rem;
+}
+
+.container .rwdCheck::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background-image: url("/arrow-down-short-wide-solid.svg");
+}
+
+@media (max-width: 848px) {
+  .container {
+    padding: 1rem 0 1rem 1rem;
+  }
+  .container .mainNav {
+    width: 65%;
+  }
+}
+
+@media (max-width: 615px) {
+  .container {
+    padding: 1rem 0 1rem 1rem;
+  }
+  .container .dropdownController {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: .5rem;
+  }
+  .container .mainNav {
+    display: none;
+    overflow: hidden;
+  }
+  .container .mainNav a:hover {
+    -webkit-transform: translateY(0px) translateX(8px);
+            transform: translateY(0px) translateX(8px);
+  }
+  .container .rwdCheck {
+    display: block;
+  }
+  .container .rwdCheck:checked {
+    -webkit-transform: scaleY(-1);
+            transform: scaleY(-1);
+  }
+  .container .rwdCheck:checked ~ .mainNav {
+    display: block;
+    text-align: center;
+    position: absolute;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#cff5f0), to(#caddda));
+    background-image: linear-gradient(0deg, #cff5f0 0%, #caddda 100%);
+    top: 7rem;
+    left: 0;
+    width: 100%;
+    -webkit-animation: height .4s linear forwards;
+            animation: height .4s linear forwards;
+    padding: 0 2.5rem;
+  }
+  .container .rwdCheck:checked ~ .mainNav .subNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container:focus-within .dropdownController {
+    border: .2rem dashed black;
+    color: #fff;
+  }
+}
+
+@-webkit-keyframes height {
+  0% {
+    padding: 0;
+    height: 0;
+  }
+  100% {
+    padding: 2.5rem 0;
+    height: 23rem;
+  }
+}
+
+@keyframes height {
+  0% {
+    padding: 0;
+    height: 0;
+  }
+  100% {
+    padding: 2.5rem 0;
+    height: 23rem;
+  }
+}
+/*# sourceMappingURL=Nav.module.css.map */

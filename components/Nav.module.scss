@@ -7,6 +7,9 @@
   background-image: linear-gradient(30deg, #88afcb 40%, #8ac4bc 60%);
   font-family: "Noto Sans TC", sans-serif;
   padding: 1rem;
+  h1{
+    font-size: 3.5rem;
+  }
 
   .logo {
     width: 18rem;
@@ -19,6 +22,7 @@
     font-weight: bold;
     color: black;
     // background-color: black;
+
     img {
       width: 5rem;
 
@@ -36,6 +40,8 @@
     // background-color: red;
     align-items: center;
     justify-content: space-around;
+
+
 
     a{
       margin-right: 2rem;
@@ -107,6 +113,7 @@
 
   .rwdCheck::before{
     content: "";
+    font-family: "Font Awesome 5 Free";
     display: block;
     width: 3rem;
     height: 3rem;
