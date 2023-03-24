@@ -1,14 +1,74 @@
-.maincontent {
-  height: 100%;
-  text-align: center;
+.maintitle {
+  height: 640px;
+
+
+
+  background: linear-gradient(135deg, rgb(223, 188, 73) 50%, rgba(150, 26, 26, 0) 50%) center
+      center / 100% 100%,
+    url("/images/meow.png") right center / auto 100%;
+
+
+    .titletext{
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3rem;
+      padding-left: 10%;
+
+
+    }
+
   h2 {
     font-size: 4rem;
+    color: white;
+
+    &:after{
+      content: '' ;
+      display: block;
+      width: 30rem;      
+      border-bottom: .5rem solid #ccc;
+    }
+  }
+  a {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    vertical-align: middle;
+
+    
+    font-size: 2.5rem;
+    font-weight: 600;
+    height: 5rem;
+    width: 5rem;
+    color: #000000;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+    &:hover{
+      background-color: #00595f;
+      color: #ffffff;
+      margin-top: 1rem;
+    }
+
+    i{
+      margin-top: 1rem;
+    }
+
+  }
+}
+
+.background {
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  font-family: 'Noto Sans TC', sans-serif; 
+  h3 {
+    font-size: 3.5rem;
     margin: 3rem;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-
 
     &::after,
     &::before {
@@ -19,16 +79,26 @@
       background: #000;
       position: absolute;
       margin: auto;
-    //   top:2.5rem;
+      //   top:2.5rem;
     }
     &::after {
-        margin-right: 30rem;
-      
+      margin-right: 30rem;
     }
     &::before {
       margin-left: 30rem;
     }
+  }
+  p{
+    font-size: 2rem;
+    text-indent: 4rem ;
+    &::first-letter{
+      font-weight: 600;
+      font-size: 3rem;
 
+    }
 
   }
+
+
+
 }

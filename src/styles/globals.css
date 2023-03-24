@@ -23,10 +23,13 @@ html, body, #__next {
   margin: 0;
 }
 
-#__next{
-  display: flex; /*使物件依序排列*/
-  flex-direction: column; /*使物件垂直排列*/
-}
+/* #__next{
+  /* display: flex; 使物件依序排列 */
+  /* flex-direction: column; 使物件垂直排列 
+} 
+  */ 
+
+
 main{
   flex-grow: 1;
 }
