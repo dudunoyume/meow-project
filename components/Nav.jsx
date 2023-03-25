@@ -29,8 +29,8 @@ export default function Fanciblock() {
 
       <nav className={styles.mainNav}>
         <div className={styles.subNav}>
-          <Link href="#"> 計畫介紹 </Link>
-          <Link href="#"> 喵星人世界 </Link>
+          <Link href="#maincontent"> 專案背景 </Link>
+          <Link href="#aim"> 我們的目標 </Link>
           <Link href="#"> App下載 </Link>
           <Link href="#"> 時間軸 </Link>
 

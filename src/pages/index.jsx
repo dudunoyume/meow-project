@@ -54,7 +54,7 @@ export default function Home({ data }) {
         </div>
       </div>
 
-      <div className={styles.wrap_break}>
+      <div className={styles.wrap_break} id = "aim">
         {/* item 1 */}
         <div className={styles.item}>
           <div className={styles.icon}>
