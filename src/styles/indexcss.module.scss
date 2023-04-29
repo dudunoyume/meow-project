@@ -168,7 +168,6 @@
   // margin:auto;
   // overflow:hidden;
   font-family: "Noto Sanas TC", san-serif;
-  font-size: 1.5vw;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -181,9 +180,10 @@
 
 
 .item{
-  width: 25%;
+  width: 300px;
+  height: 400px;
   text-align: center;
-  margin: 0 15px;
+  margin: 0  15px  80px 15px;
   border:10px solid #f5cccb ;
   background-color: #fff;
   border-radius: 20px;
@@ -192,17 +192,17 @@
 
   .icon{
       color: #f8c3c1;
-      width: 150px;
-      height: 150px;
+      width: 120px;
+      height: 120px;
       background-color: rgb(255, 255, 255);
       border-radius: 50%;
       // 破格的使用
-      margin: -75px auto 0;
+      margin: -60px auto 0;
       // text-align: center;
       // align-items: center;
-      font-size: 85px;
+      font-size: 60px;
       // 用來作為垂直居中
-      line-height: 150px;
+      line-height: 120px;
 
       // 用來定位 : before
       position: relative;
@@ -229,16 +229,41 @@
 
   .txt{
       padding:20px;
+      
 
       h2{
           color: #f5afac;
+          font-size: 2.5rem;
+          padding:0 0 20px 0;
       }
   
       p{
-          color: #ccc;
+          color: #0f0f0f;
+          font-size: 1.5rem;
       }
 
+
   }
+  .button{
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    font-size: 2rem;
+    height: 40px;
+    line-height: 35px;
+    border-radius: 20px;
+    color: white;
+    font-weight:600;
+    background-color: #f5afac;
+    margin: auto;
+    transition: all 0.3s ease-in-out;
+  }
+  .button:hover{
+    background-color: rgb(102, 2, 89);
+    box-shadow: 3px 3px 2px rgb(102, 2, 89, 0.7);
+    transform: translateX(-1px) translateY(-1px);
+  }
+
 
 
 }
@@ -254,3 +279,4 @@
 }
 
 }
+

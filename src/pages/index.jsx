@@ -22,7 +22,7 @@ export default function Home({ data }) {
       <div className={styles.maintitle}>
         <div className={styles.titletext}>
           <h2>
-            協尋喵星人{" "}
+            協尋喵星人
             <a href="#maincontent">
               <i className="fas fa-angles-down"></i>
             </a>
@@ -41,7 +41,7 @@ export default function Home({ data }) {
         {/* { data.name } */}
       </div>
 
-      <div className={styles.wrap11} id = "aim">
+      <div className={styles.wrap11} id="aim">
         <div className={styles.container11}>
           <h1>我們的目標</h1>
           <div className={styles.txt11}>
@@ -54,7 +54,7 @@ export default function Home({ data }) {
         </div>
       </div>
 
-      <div className={styles.wrap_break} >
+      <div className={styles.wrap_break}>
         {/* item 1 */}
         <div className={styles.item}>
           <div className={styles.icon}>
@@ -64,18 +64,15 @@ export default function Home({ data }) {
           <div className={styles.txt}>
             <h2> 瞭解人們對浪貓的關心度</h2>
             <p>
-            了解目標族群，他們的基本資料、生活型態、參與方式
-
-參與社群與平時關心浪貓的方式
-
-對於浪貓的關心度
-
-幫助浪貓的頻率及意願
+              了解目標族群，他們的基本資料、生活型態、參與方式
+              參與社群與平時關心浪貓的方式 對於浪貓的關心度 幫助浪貓的頻率及意願
             </p>
-            <Link href="" className={styles.button}>
+
+          </div>
+
+          <Link href="" className={styles.button}>
               more
             </Link>
-          </div>
         </div>
 
         {/* item 2 */}
@@ -87,16 +84,14 @@ export default function Home({ data }) {
           <div className={styles.txt}>
             <h2> 幫助想幫忙的人更便捷的能通報給他人知道 </h2>
             <p>
-            地圖進行浪貓群聚的地點分享
-
-透過記錄了解在外流浪的貓貓面臨的問題（疾病、外傷）
-
-利用拍照記錄，然後「輔助」系統針對過往系統內的資料去批配(AI)貓咪花色
+              地圖進行浪貓群聚的地點分享
+              透過記錄了解在外流浪的貓貓面臨的問題（疾病、外傷）
+              利用拍照記錄，然後「輔助」系統針對過往系統內的資料去批配(AI)貓咪花色
             </p>
-            <Link href="" className={styles.button}>
+          </div>
+          <Link href="" className={styles.button}>
               more
             </Link>
-          </div>
         </div>
 
         {/* item 3 */}
@@ -108,16 +103,14 @@ export default function Home({ data }) {
           <div className={styles.txt}>
             <h2> 減少在外流浪的貓貓</h2>
             <p>
-            串連其他協會進行浪貓的照護
-
-讓問題具體化，提高才有被解決的機會
-
-建立資料庫並有篩選機制，更有效的救援浪貓
+              串連其他協會進行浪貓的照護 讓問題具體化，提高才有被解決的機會
+              建立資料庫並有篩選機制，更有效的救援浪貓
             </p>
-            <Link href="" className={styles.button}>
+          </div>
+
+          <Link href="" className={styles.button}>
               more
             </Link>
-          </div>
         </div>
       </div>
     </Layout>

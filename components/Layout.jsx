@@ -19,7 +19,7 @@ export default function Layout({ children, returnBack }){
       </Head>
       <Nav></Nav>
       <main>{children}</main>
-      {/* {returnBack && <Link className={styles.home} href="/">回到首頁</Link>} */}
+      {returnBack && <Link className={styles.home} href="/">回到首頁</Link>}
       <Footer></Footer>
 
     </>
